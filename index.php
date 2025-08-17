@@ -6,8 +6,8 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./assets/css/navbar.css">
     <link rel="stylesheet" href="./assets/css/index.css">
+    <script defer src="./assets/js/app.js"></script>
     <script src="https://kit.fontawesome.com/186f1479cd.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/finisher-header.es5.min.js" type="text/javascript"></script>
 </head>
 <body>
 
@@ -16,7 +16,7 @@
             <div class="title"><h1>My Portfolio</h1></div>
             <div class="menu">
                 <ul class="menu-list">
-                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -29,92 +29,93 @@
     </nav>
     
     <div class="container">
-        <main>
-            <div class="header finisher-header" style="width: 100%;">
-            <div class="hero" id="home">
-                <div class="info">
-                    <div class="wrap">
-                        <div class="title-main">
-                            <h1>Hi! I'm Macren L. Lim</h1>
+        <div class="main-container">
+            <main>
+                <div class="hero" id="home">
+                    <div class="info">
+                        <div class="wrap">
+                            <div class="title-main">
+                                <h1>Hi! I'm Macren L. Lim</h1>
+                            </div>
+                            <div class="info1 up">
+                                <span>Passionate about web development, graphic design, and digital media. Dedicated to learning and creating meaningful projects.</span>
+                            </div>
+                            <div class="links">
+                                <div class="link left">
+                                    <a href="https://github.com/lim6739" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                                <div class="link left">
+                                    <a href="https://www.facebook.com/macren.lim.3/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+                                <div class="link left">
+                                    <a href="https://www.instagram.com/limmacren/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                                </div>
+                                <div class="link left">
+                                    <a href="https://www.linkedin.com/in/limmacren" target="_blank"><i class="fa-brands fa-square-linkedin"></i></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="info1">
-                            <span>Passionate about web development, graphic design, and digital media. Dedicated to learning and creating meaningful projects.</span>
+                        <div class="img">
+                            <img src="./assets/img/macren.png" alt="Profile Pic" width="350px">
                         </div>
-                        <div class="links">
-                            <div class="link">
-                                <a href="https://github.com/lim6739" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            </div>
-                            <div class="link">
-                                <a href="https://www.facebook.com/macren.lim.3/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            </div>
-                            <div class="link">
-                                <a href="https://www.instagram.com/limmacren/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                            </div>
-                            <div class="link">
-                                <a href="https://www.linkedin.com/in/limmacren" target="_blank"><i class="fa-brands fa-square-linkedin"></i></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img src="./assets/img/macren.png" alt="Profile Pic" width="350px">
                     </div>
                 </div>
-            </div>
-            </div>
-        </main>
+            </main>
+        </div>
         <div class="section">
             <div class="section1" id="about">
-                <div class="skillsInfo2">
+                <div class="skillsInfo2 hidden">
                     <div>
                         <img src="./assets/img/workspace.png" alt="workspace.png" width="350px">
                     </div>
                     <div class="aboutMe">
                         <div class="about">
-                            <div class="title2">
+                            <div class="title2 right">
                                 <h2>ABOUT ME</h2>
                             </div>
-                            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi delectus, quaerat reprehenderit temporibus velit magni nostrum, in aliquid fugiat atque ex iure laborum quos animi tempora fugit eos earum libero?</span>
+                            <h2 class="h2 right">Hi! I'm Macren L. Lim</h2>
+                            <span class="right">A student pursuing a degree in Information Technology. Through hands-on projects, I’ve gained valuable experience in web development, graphic design, and digital media. I’m passionate about creating innovative solutions and am dedicated to honing my skills to deliver impactful projects with creativity and commitment.</span>
                         </div>
                     </div>
                 </div>
-                <div class="divskills">
+                <div class="divskills hidden">
                     <div class="skill">
                         <span class="tech"><h2>My Skills</h2></span>
                     </div>
                     <div class="skillsImg">
                         <div class="skillsInfo">
                             <div class="skillsImg1">
-                                <div class="logo">
+                                <div class="logo hidden">
                                     <div class="logos">
                                         <img src="./assets/img/html.png" alt="html.png">
                                         <span>HTML</span>
                                     </div>
                                 </div>
-                                <div class="logo">
+                                <div class="logo hidden">
                                     <div class="logos">
                                         <img src="./assets/img/css.png" alt="css.png">
                                         <span>CSS</span>
                                     </div>
                                 </div>
-                                <div class="logo">
+                                <div class="logo hidden">
                                     <div class="logos">
                                         <img src="./assets/img/js.png" alt="js.png">
                                         <span>JavaScript</span>
                                     </div>
                                 </div>
-                                <div class="logo">
+                                <div class="logo hidden">
                                     <div class="logos">
                                         <img src="./assets/img/php.png" alt="php.png">
                                         <span>Php</span>
                                     </div>
                                 </div>
-                                <div class="logo">
+                                <div class="logo hidden">
                                     <div class="logos">
                                         <img src="./assets/img/bootstrap.png" alt="bootstrap.png">
                                         <span>Bootstrap</span>
                                     </div>
                                 </div>
-                                <div class="logo">
+                                <div class="logo hidden">
                                     <div class="logos">
                                         <img src="./assets/img/figma.png" alt="figma.png">
                                         <span>Figma</span>
@@ -126,83 +127,104 @@
                 </div>
             </div>
             <div class="section2" id="projects">
-                <div class="titlecard">
+                <div class="titlecard hidden">
                     <h2>Projects</h2>
                 </div>
                 <div class="allCard">
                     <div class="project-row">
-                        <div class="project-img">
-                            <img src="./assets/img/project1.png" alt="Project 1">
+                        <div class="project-img left">
+                            <img src="./assets/img/Projects/BorrowingSystem.png" alt="Project 1">
                         </div>
                         <div class="project-description">
-                            <h3>Project 1 Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis fugiat consequuntur doloremque laboriosam eum cum obcaecati maxime voluptatum exercitationem nobis accusamus dignissimos suscipit, voluptas earum doloribus! Aut voluptas molestiae quam!</p>
+                            <h3 class="r right">SMART Borrowing System at BASC</h3>
+                            <p class="r right">A digital solution for tracking, managing, and organizing faculty equipment with QR code technology.</p>
+                            <div class="redirect r right">
+                                <a href="http://localhost/BorrowingSystem/index.php" target="_blank">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="project-row">
                         <div class="project-description">
-                            <h3>Project 2 Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit consequatur saepe, nesciunt quibusdam qui ab? Beatae illum odit corrupti quas dolor dolorum reiciendis cum rem quod provident? Modi, ipsum dolores?</p>
+                            <h3 class="l left">Academic Information System</h3>
+                            <p class="l left">Manage students, professors, and academic records. Check your records and manage your academic information efficiently.</p>
+                            <div class="redirect l left">
+                                <a href="http://localhost/student_system/account/login.php" target="_blank">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
                         </div>
-                        <div class="project-img">
-                            <img src="./assets/img/project2.png" alt="Project 2">
+                        <div class="project-img right">
+                            <img src="./assets/img/Projects/AIS.png" alt="Project 2">
                         </div>
                     </div>
                     <div class="project-row">
-                        <div class="project-img">
-                            <img src="./assets/img/project2.png" alt="Project 2">
+                        <div class="project-img left">
+                            <img src="./assets/img/Projects/DocumentReq.png" alt="Project 2">
                         </div>
                         <div class="project-description">
-                            <h3>Project 2 Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vitae quod repellat veniam est veritatis soluta voluptas quae velit error nisi, totam, accusamus ad fugit. Aliquam labore laudantium recusandae aliquid!</p>
+                            <h3 class="r right">Document Request System UI Design</h3>
+                            <p class="r right">A user-friendly interface prototype for streamlining document requests, designed with Figma to enhance accessibility and efficiency.</p>
+                            <div class="redirect r right">
+                                <a href="https://www.figma.com/proto/eVolBR1XMflxpCAXsEphAI/Integration-of-Kiosk-and-Queue-System?page-id=0%3A1&node-id=264-927&p=f&t=eBjO3i8JDiof5Lw1-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A3" target="_blank">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-row">
+                        <div class="project-description">
+                            <h3 class="l left">Student Management System</h3>
+                            <p class="l left">A web-based platform for efficient management of student data, enabling CRUD operations to streamline administrative tasks.</p>
+                            <div class="redirect l left">
+                                <a href="http://localhost/student_crud/index.php" target="_blank">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-img right">
+                            <img src="./assets/img/Projects/SMS.png" alt="Project 2">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="section3" id="contact">
-                
+                    <div class="titlecard hidden">
+                        <h2>Contact</h2>
+                    </div>
+                <div class="sect3">
+                    <div class="contacts left">
+                        <div class="cont">
+                            <div class="contInf">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+63 910 724 4070</p>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <div class="contInf">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>limmacren@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <div class="contInf">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Dona Remedios Trinidad, Bulacan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer>
             <span>© 2025 Macren Lacsina Lim. All Rights Reserved.</span>
         </footer>
     </div>
-    <script type="text/javascript">
-        new FinisherHeader({
-        "count": 6,
-        "size": {
-            "min": 1304,
-            "max": 1500,
-            "pulse": 0
-        },
-        "speed": {
-            "x": {
-            "min": 0.6,
-            "max": 1.6
-            },
-            "y": {
-            "min": 0.6,
-            "max": 1.6
-            }
-        },
-        "colors": {
-            "background": "#000000",
-            "particles": [
-            "#430073",
-            "#7000b9"
-            ]
-        },
-        "blending": "lighten",
-        "opacity": {
-            "center": 0.6,
-            "edge": 0
-        },
-        "skew": 0,
-        "shapes": [
-            "c"
-        ]
-        });
-        </script>
     <script>
         document.querySelectorAll('.navbar ul a').forEach(link => {
             link.addEventListener('click', function() {
