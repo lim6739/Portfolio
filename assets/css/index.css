@@ -1,0 +1,250 @@
+/*
+body {
+    background-image: linear-gradient(120deg, black, rgb(49, 0, 76));
+}
+*/
+.container {
+    padding: 0px 400px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.header {
+    height: 1000px;
+    background-repeat: no-repeat;
+}
+
+.info {
+    display: flex;
+    gap: 5rem;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    font-size: 30px;
+    text-align: start;
+    gap: 0.5rem;
+}
+
+.link a i{
+    margin-top: 23px;
+    color: #0e0e0e;
+    transition: transform 0.3s ease-in-out;
+}
+
+.link a i:hover {
+    transform: scale(1.05);
+}
+
+.img img {
+    box-shadow: 0 0 10px rgba(59, 59, 59, 0.25);
+    border-radius: 20px;
+}
+
+.title-main h1 {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    padding-right: 8px;
+    font-size: 55px;
+    animation: typing 2s steps(28, end) forwards;
+}
+
+.info1 span{
+    display: flex;
+    width: 520px;
+    text-align: justify;
+}
+
+.title-main h1::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.12em;
+    height: 4.5rem;
+    margin-left: 10px;
+    background-color: #000;
+    border-radius: 5px;
+    animation: blink-caret 1s step-end infinite;
+}
+
+.section {
+    margin-top: 75px;
+}
+
+.title2 h2 {
+    font-size: 20px;
+}
+
+.skillsInfo {
+    display: flex;
+}
+
+.tech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 75px;
+}
+
+.skillsImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsImg1 {
+    display: flex;
+    margin-top: 70px;
+    gap: 1rem;
+}
+
+.skillsImg1 .logo img {
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    box-shadow: 0 0 2px rgba(59, 59, 59, 0.25);
+    border-radius: 15px;
+    opacity: 90%;
+    background-color: #ececec;
+}
+
+.skillsInfo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 5rem;
+}
+
+.aboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    width: 520px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+}
+
+.logos span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.logo img {
+    object-fit: contain;
+}
+
+.section2 {
+    margin-top: 100px;
+}
+
+.titlecard h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.allCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-row {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-row:hover {
+    transform: scale(1.02);
+}
+
+.project-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 400px;
+    height: 300px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+}
+
+.project-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.project-description {
+    align-items: center;
+    justify-content: center;
+}
+
+.project-description h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.project-description p {
+    width: 520px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { opacity: 1 }
+    50% { opacity: 0 }
+}
