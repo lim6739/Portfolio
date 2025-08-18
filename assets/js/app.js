@@ -22,3 +22,12 @@ document.querySelectorAll('.navbar ul a').forEach(link => {
         target.scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+const toggleButton = document.querySelector('.menu-list button');
+const body = document.body;
+
+toggleButton.addEventListener('click', () => {
+    body.classList.toggle('darkmode');
+    const modeText = body.classList.contains('darkmode') ? 'Light Mode' : 'Dark Mode';
+    toggleButton.querySelector('span').textContent = modeText;
+});

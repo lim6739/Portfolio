@@ -4,6 +4,43 @@ body {
 }
 */
 
+:root {
+    --background-start: rgb(255, 255, 255);
+    --background-end: rgb(255, 255, 255);
+    --text-color: #111111;
+    --menu-bg: #ececec;
+    --menu-bg1: #ffffff00;
+    --menu-shadow: rgba(59, 59, 59, 0.25);
+    --project-bg: #ececec;
+    --project-img-bg: #eaeaea;
+    --footer-color: #1e1e1e;
+    --link-color: #0e0e0e;
+    --link-hover-scale: 1.05;
+    --img-shadow: rgba(59, 59, 59, 0.25);
+    --active-color: #000000;
+    --menu-margin-line: #d2d2d2;
+}
+
+.darkmode {
+    --background-start: rgb(25, 25, 25);
+    --background-end: rgb(20, 20, 20);
+    --text-color: #ffffff;
+    --menu-bg: rgb(143, 143, 143, 0.2);
+    --menu-shadow: rgba(255, 255, 255, 0.1);
+    --project-bg: #333333;
+    --project-img-bg: #444444;
+    --footer-color: #cccccc;
+    --link-color: #cccccc;
+    --link-hover-scale: 1.05;
+    --img-shadow: rgba(255, 255, 255, 0.1);
+    --active-color: #ffffff;
+    --menu-margin-line: rgb(102, 102, 102, 0.5);
+}
+
+body {
+    background-image: linear-gradient(120deg, var(--background-start), var(--background-end));
+}
+
 main {
     display: flex;
     align-items: center;
@@ -29,18 +66,18 @@ main {
     gap: 0.5rem;
 }
 
-.link a i{
+.link a i {
     margin-top: 23px;
-    color: #0e0e0e;
+    color: var(--link-color);
     transition: transform 0.3s ease-in-out;
 }
 
 .link a i:hover {
-    transform: scale(1.05);
+    transform: scale(var(--link-hover-scale));
 }
 
 .img img {
-    box-shadow: 0 0 10px rgba(59, 59, 59, 0.25);
+    box-shadow: 0 0 10px var(--img-shadow);
     border-radius: 20px;
     rotate: 5deg;
     transition: transform 0.2s ease-in-out, rotate 0.2s ease-in-out;
@@ -59,12 +96,14 @@ main {
     padding-right: 8px;
     font-size: 55px;
     animation: typing 2s steps(28, end) forwards;
+    color: var(--text-color);
 }
 
-.info1 span{
+.info1 span {
     display: flex;
     width: 520px;
     text-align: justify;
+    color: var(--text-color);
 }
 
 .title-main h1::after {
@@ -76,7 +115,7 @@ main {
     width: 0.12em;
     height: 4.5rem;
     margin-left: 10px;
-    background-color: #000;
+    background-color: var(--text-color);
     border-radius: 5px;
     animation: blink-caret 1s step-end infinite;
 }
@@ -87,6 +126,7 @@ main {
 
 .title2 h2 {
     font-size: 20px;
+    color: var(--text-color);
 }
 
 .skillsInfo {
@@ -103,6 +143,7 @@ main {
     justify-content: center;
     font-size: 20px;
     margin-top: 75px;
+    color: var(--text-color);
 }
 
 .skillsImg {
@@ -121,10 +162,10 @@ main {
     max-width: 500px;
     width: 100%;
     padding: 30px;
-    box-shadow: 0 0 2px rgba(59, 59, 59, 0.25);
+    box-shadow: 0 0 2px var(--img-shadow);
     border-radius: 15px;
     opacity: 90%;
-    background-color: #ececec;
+    background-color: var(--menu-bg);
 }
 
 .skillsInfo2 {
@@ -133,7 +174,7 @@ main {
     justify-content: center;
     margin-top: 50px;
     padding: 100px 0 100px;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .aboutMe {
@@ -152,6 +193,11 @@ main {
 .about .h2 {
     font-size: 40px;
     margin: 10px 0 8px;
+    color: var(--text-color);
+}
+
+.about .span {
+    color: var(--text-color);
 }
 
 .logo {
@@ -167,6 +213,7 @@ main {
     align-items: center;
     justify-content: center;
     margin-top: 8px;
+    color: var(--text-color);
 }
 
 .logos {
@@ -181,17 +228,26 @@ main {
     object-fit: contain;
 }
 
-.section2,
-.section3 {
+.section2 {
     margin-top: 100px;
+}
+
+.titlecard1 h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: var(--text-color);
 }
 
 .titlecard h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-size: 30px;
+    color: var(--text-color);
 }
 
 .allCard {
@@ -199,17 +255,18 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .project-row {
     display: flex;
     align-items: center;
-    gap: 3rem;
-    background-color: white;
+    gap: 1rem;
+    background-color: var(--project-bg);
     border-radius: 6px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    padding: 20px;
 }
 
 .project-row:hover {
@@ -223,7 +280,7 @@ main {
     max-width: 100%;
     width: 500px;
     height: auto;
-    background-color: #eaeaea;
+    background-color: var(--project-img-bg);
     border-radius: 10px;
 }
 
@@ -243,11 +300,13 @@ main {
 .project-description h3 {
     margin-bottom: 10px;
     font-size: 25px;
+    color: var(--text-color);
 }
 
 .project-description p {
     width: 500px;
     line-height: 1.5;
+    color: var(--text-color);
 }
 
 .redirect {
@@ -262,7 +321,7 @@ main {
 
 .redirect a {
     text-decoration: none;
-    color: #000;
+    color: var(--text-color);
 }
 
 .redirect:hover {
@@ -287,6 +346,12 @@ main {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.contInf i,
+.contInf p {
+    font-size: 20px;
+    color: var(--text-color);
 }
 
 .hidden {
@@ -330,9 +395,11 @@ main {
 .link:nth-child(2) {
     transition-delay: 2000ms;
 }
+
 .link:nth-child(3) {
     transition-delay: 2200ms;
 }
+
 .link:nth-child(4) {
     transition-delay: 2400ms;
 }
@@ -344,6 +411,7 @@ main {
 .about .h2 {
     transition-delay: 200ms;
 }
+
 .about span {
     transition-delay: 400ms;
 }
@@ -351,18 +419,23 @@ main {
 .logo {
     transition-delay: 400ms;
 }
+
 .logo:nth-child(2) {
     transition-delay: 200ms;
 }
+
 .logo:nth-child(3) {
     transition-delay: 0ms;
 }
+
 .logo:nth-child(4) {
     transition-delay: 0ms;
 }
+
 .logo:nth-child(5) {
     transition-delay: 200ms;
 }
+
 .logo:nth-child(6) {
     transition-delay: 400ms;
 }
@@ -370,6 +443,7 @@ main {
 .r:nth-child(2) {
     transition-delay: 200ms;
 }
+
 .r:nth-child(3) {
     transition-delay: 400ms;
 }
@@ -377,6 +451,7 @@ main {
 .l:nth-child(2) {
     transition-delay: 200ms;
 }
+
 .l:nth-child(3) {
     transition-delay: 400ms;
 }
@@ -401,8 +476,3 @@ main {
         scale: 1;
     }
 } */
-
-
-    /* animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%; */
