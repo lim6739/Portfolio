@@ -18,6 +18,7 @@
                 <ul class="menu-list">
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <div class="btn">
@@ -35,6 +36,7 @@
         <div class="main-container">
             <main>
                 <div class="hero" id="home">
+                    <div class="spacer layer1"></div>
                     <div class="info">
                         <div class="wrap">
                             <div class="title-main">
@@ -61,7 +63,6 @@
                         <div class="img">
                             <img src="./assets/img/macren.png" alt="Profile Pic" width="350px">
                         </div>
-                        
                     </div>
                 </div>
             </main>
@@ -83,7 +84,7 @@
                     </div>
                 </div>
                 <div class="divskills hidden">
-                    <div class="skill">
+                    <div class="skill" id="skills">
                         <span class="tech"><h2>My Skills</h2></span>
                     </div>
                     <div class="skillsImg">
@@ -135,7 +136,7 @@
                     <h2>Projects</h2>
                 </div>
                 <div class="allCard">
-                    <div class="project-row">
+                    <div class="project-row hidden">
                         <div class="project-img left">
                             <img src="./assets/img/Projects/BorrowingSystem.png" alt="Project 1">
                         </div>
@@ -150,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-row">
+                    <div class="project-row hidden">
                         <div class="project-description">
                             <h3 class="l left">Academic Information System</h3>
                             <p class="l left">Manage students, professors, and academic records. Check your records and manage your academic information efficiently.</p>
@@ -165,7 +166,7 @@
                             <img src="./assets/img/Projects/AIS.png" alt="Project 2">
                         </div>
                     </div>
-                    <div class="project-row">
+                    <div class="project-row hidden">
                         <div class="project-img left">
                             <img src="./assets/img/Projects/DocumentReq.png" alt="Project 2">
                         </div>
@@ -180,7 +181,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-row">
+                    <div class="project-row hidden">
                         <div class="project-description">
                             <h3 class="l left">Student Management System</h3>
                             <p class="l left">A web-based platform for efficient management of student data, enabling CRUD operations to streamline administrative tasks.</p>
@@ -198,7 +199,7 @@
                 </div>
             </div>
         </div>
-        <footer>
+        <footer class="hidden">
             <div class="section3" id="contact">
                 <div class="titlecard hidden">
                     <h2>Contact</h2>

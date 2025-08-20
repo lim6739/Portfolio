@@ -51,6 +51,39 @@ html, body {
     top: 0;
     z-index: 999;
     background-color: var(--menu-bg1);
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: var(--menu-bg2);
+    box-shadow: 0 4px 10px var(--img-shadow);
+    padding: 4px 130px;
+    animation: curtain 0.4s ease-in-out forwards;
+}
+
+.navbar.scrolled .menu,
+.navbar.scrolled .menu-list {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+
+@keyframes curtain {
+    0% {
+        transform: translateY(-100%);
+    }
+    40% {
+        transform: translateY(-5%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .navdiv {
@@ -120,10 +153,10 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
-    padding: 20px 0 0 ;
+    padding: 20px 0 0;
     width: 100%;
     background-color: var(--menu-bg);
-    color: var(--footer-color,);
+    color: var(--footer-color);
 }
 
 footer span {

@@ -1,3 +1,4 @@
+//for transition animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -13,6 +14,7 @@ const observer = new IntersectionObserver((entries) => {
 const animatedElements = document.querySelectorAll('.hidden, .left, .right, .up');
 animatedElements.forEach((el) => observer.observe(el));
 
+//for active navbar
 document.querySelectorAll('.navbar ul a').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
@@ -23,6 +25,7 @@ document.querySelectorAll('.navbar ul a').forEach(link => {
     });
 });
 
+//for darkmode
 const toggleButton = document.querySelector('.menu-list button');
 const body = document.body;
 
@@ -31,3 +34,23 @@ toggleButton.addEventListener('click', () => {
     const modeText = body.classList.contains('darkmode') ? 'Light Mode' : 'Dark Mode';
     toggleButton.querySelector('span').textContent = modeText;
 });
+
+//for navbar background color change based on section
+const navbar = document.querySelector('.navbar');
+const heroSection = document.querySelector('#home');
+const aboutSection = document.querySelector('#about');
+
+const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.target === aboutSection && entry.isIntersecting) {
+            navbar.classList.add('scrolled');
+        } else if (entry.target === heroSection && entry.isIntersecting) {
+            navbar.classList.remove('scrolled');
+        }
+    });
+}, {
+    threshold: 0.2 // Trigger when 10% of the section is visible
+});
+
+sectionObserver.observe(heroSection);
+sectionObserver.observe(aboutSection);
