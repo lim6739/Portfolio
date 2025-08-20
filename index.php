@@ -69,17 +69,19 @@
         </div>
         <div class="section">
             <div class="section1" id="about">
-                <div class="skillsInfo2 hidden">
-                    <div>
-                        <img src="./assets/img/workspace.png" alt="workspace.png" width="500px">
-                    </div>
-                    <div class="aboutMe">
-                        <div class="about">
-                            <div class="title2 right">
-                                <h2>ABOUT ME</h2>
+                <div class="divs">
+                    <div class="skillsInfo2 hidden">
+                        <div>
+                            <img src="./assets/img/workspace.png" alt="workspace.png" width="500px">
+                        </div>
+                        <div class="aboutMe">
+                            <div class="about">
+                                <div class="title2 right">
+                                    <h2>ABOUT ME</h2>
+                                </div>
+                                <h2 class="h2 right">Hi! I'm Macren L. Lim</h2>
+                                <span class="span right">A student pursuing a degree in Information Technology. Through hands-on projects, I’ve gained valuable experience in web development, graphic design, and digital media. I’m passionate about creating innovative solutions and am dedicated to honing my skills to deliver impactful projects with creativity and commitment.</span>
                             </div>
-                            <h2 class="h2 right">Hi! I'm Macren L. Lim</h2>
-                            <span class="span right">A student pursuing a degree in Information Technology. Through hands-on projects, I’ve gained valuable experience in web development, graphic design, and digital media. I’m passionate about creating innovative solutions and am dedicated to honing my skills to deliver impactful projects with creativity and commitment.</span>
                         </div>
                     </div>
                 </div>
@@ -200,44 +202,51 @@
             </div>
         </div>
         <footer class="hidden">
-            <div class="section3" id="contact">
-                <div class="titlecard hidden">
-                    <h2>Contact</h2>
-                </div>
-                <div class="sect3">
-                    <div class="contacts left">
-                        <div class="cont">
-                            <div class="contInf">
-                                <i class="fa-solid fa-phone"></i>
-                                <p>+63 910 724 4070</p>
-                            </div>
+            <div class="footer-wrap">
+                <div class="section3" id="contact">
+                    <div class="title-footer">
+                        <div class="titlecard hidden">
+                            <h2>Contact Me</h2>
+                            <hr>
                         </div>
-                        <div class="cont">
-                            <div class="contInf">
-                                <i class="fa-solid fa-envelope"></i>
-                                <p>limmacren@gmail.com</p>
+                    </div>
+                    <div class="footer-cont">
+                        <div class="sect3">
+                            <div class="contacts left">
+                                <div class="cont">
+                                    <div class="contInf">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <p>+63 910 724 4070</p>
+                                    </div>
+                                </div>
+                                <div class="cont">
+                                    <div class="contInf">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <p>limmacren@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="cont">
+                                    <div class="contInf">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p>Dona Remedios Trinidad, Bulacan</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="cont">
-                            <div class="contInf">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <p>Dona Remedios Trinidad, Bulacan</p>
+                            <div class="contacts right">
+                                <form action="https://api.web3forms.com/submit" method="POST">
+                                    <input type="hidden" name="access_key" value="136ac1dc-f9c1-4933-aeb9-dc8035e8fdee">
+                                    <input type="text" name="name" class="contact-input" placeholder="Your Name" required>
+                                    <input type="email" name="email" class="contact-input" placeholder="Your Email" required>
+                                    <textarea name="message" class="contact-input" placeholder="Your Message" required></textarea>
+                                    <button type="submit" class="contact-button">Submit</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+                <span>© 2025 Macren Lacsina Lim. All Rights Reserved.</span>
             </div>
-            <span>© 2025 Macren Lacsina Lim. All Rights Reserved.</span>
         </footer>
     </div>
-
-    <script>
-        document.querySelectorAll('.navbar ul a').forEach(link => {
-            link.addEventListener('click', function() {
-                document.querySelector('.navbar ul a.active').classList.remove('active');
-                this.classList.add('active');
-            });
-        });
-    </script>
 </body>
 </html>
