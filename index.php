@@ -6,7 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./assets/css/navbar.css">
     <link rel="stylesheet" href="./assets/css/index.css">
-    <script defer src="./assets/js/app.js"></script>
+    <script defer src="./assets/js/ani.js"></script>
     <script src="https://kit.fontawesome.com/186f1479cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
