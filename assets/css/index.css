@@ -295,8 +295,8 @@ main {
     background-color: var(--project-bg);
     border-radius: 6px;
     overflow: hidden;
-    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
     padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-row:hover {
@@ -352,7 +352,7 @@ main {
 .redirect a {
     text-decoration: none;
     color: var(--text-color);
-    transition: font-weight 1s ease-in-out, transform 1s ease-in-out;
+    transition: font-weight 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .redirect a:hover {
