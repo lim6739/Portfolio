@@ -16,7 +16,6 @@ body {
     --footer-color: #6f6f6f;
     --foot-color: #efefef;
     --link-color: #161616;
-    --link-hover-scale: 1.07;
     --img-shadow: rgba(59, 59, 59, 0.25);
     --active-color: #000000;
     --menu-margin-line: #d2d2d2;
@@ -35,7 +34,6 @@ body {
     --project-img-bg: #444444;
     --footer-color: #292929;
     --link-color: #cccccc;
-    --link-hover-scale: 1.07;
     --img-shadow: rgba(255, 255, 255, 0.1);
     --active-color: #ffffff;
     --menu-margin-line: rgb(102, 102, 102, 0.5);
@@ -98,11 +96,11 @@ main {
 .link a i {
     margin-top: 23px;
     color: var(--link-color);
-    transition: transform 0.2s ease-in-out, text-shadow 0.2 ease-in-out;
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
 .link a i:hover {
-    transform: scale(var(--link-hover-scale));
+    transform: scale(1.07);
     text-shadow: 0 4px 10px var(--img-shadow);
 }
 
@@ -300,7 +298,7 @@ main {
 
 .project-row:hover {
     transform: scale(1.02);
-    box-shadow: 0 4px 10px var(--img-shadow);
+    box-shadow: 0 4px 8px var(--img-shadow);
 }
 
 .project-img {
