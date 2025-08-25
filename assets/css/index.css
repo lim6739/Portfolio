@@ -98,12 +98,13 @@ main {
 .link a i {
     margin-top: 23px;
     color: var(--link-color);
-    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .link a i:hover {
+    rotate: -10deg;
     transform: scale(1.07);
-    text-shadow: 0 4px 10px var(--img-shadow);
+    color: var(--cell-hover);
 }
 
 .img img {
