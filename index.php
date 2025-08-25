@@ -36,14 +36,17 @@
         <div class="main-container">
             <main>
                 <div class="hero" id="home">
-                    <div class="spacer layer1"></div>
+                    <div class="dynamic-grid"></div>
                     <div class="info">
                         <div class="wrap">
                             <div class="title-main">
                                 <h1>Hi! I'm Macren L. Lim</h1>
                             </div>
-                            <div class="info1 up">
-                                <span>Passionate about web development, graphic design, and digital media. Dedicated to learning and creating meaningful projects.</span>
+                            <div class="info-me up">
+                                <h1>Front-End Developer | UX/UI Designer</h1>
+                            </div>
+                            <div class="info1 left">
+                                <span>Passionate about web development and design, focused on building creative, responsive, and functional projects.</span>
                             </div>
                             <div class="links">
                                 <div class="link left">
@@ -56,12 +59,13 @@
                                     <a href="https://www.instagram.com/limmacren/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                                 </div>
                                 <div class="link left">
-                                    <a href="https://www.linkedin.com/in/limmacren" target="_blank"><i class="fa-brands fa-square-linkedin"></i></i></a>
+                                    <a href="https://www.linkedin.com/in/limmacren" target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="img">
                             <img src="./assets/img/macren.png" alt="Profile Pic" width="350px">
+                            <img class="img-hover" src="./assets/img/pfp.png" alt="Profile Pic" width="350px">
                         </div>
                     </div>
                 </div>
@@ -80,7 +84,8 @@
                                     <h2>ABOUT ME</h2>
                                 </div>
                                 <h2 class="h2 right">Hi! I'm Macren L. Lim</h2>
-                                <span class="span right">A student pursuing a degree in Information Technology. Through hands-on projects, I’ve gained valuable experience in web development, graphic design, and digital media. I’m passionate about creating innovative solutions and am dedicated to honing my skills to deliver impactful projects with creativity and commitment.</span>
+                                <span class="span right">A student pursuing a degree in Information Technology with a focus on Front-End Development and UX/UI Design. I enjoy turning ideas into functional projects and have gained experience in web development, graphic design, and digital media.</span>
+                                <span class="span right">My goal is to keep learning and applying my skills to create meaningful and well-structured projects.</span>
                             </div>
                         </div>
                     </div>
@@ -88,6 +93,8 @@
                 <div class="divskills hidden">
                     <div class="skill" id="skills">
                         <span class="tech"><h2>My Skills</h2></span>
+                        <hr>
+                        <span class="tech1">Here are the technology stacks I’ve developed skills in during my journey in Front-End Development, which I apply to creating effective and well-structured projects.</span>
                     </div>
                     <div class="skillsImg">
                         <div class="skillsInfo">
@@ -136,15 +143,24 @@
             <div class="section2" id="projects">
                 <div class="titlecard1 hidden">
                     <h2>Projects</h2>
+                    <hr>
                 </div>
                 <div class="allCard">
                     <div class="project-row hidden">
-                        <div class="project-img left">
-                            <img src="./assets/img/Projects/BorrowingSystem.png" alt="Project 1">
+                        <div class="project-img-bg hidden">
+                            <div class="project-img">
+                                <img src="./assets/img/Projects/BorrowingSystem.png" alt="Project 1">
+                            </div>
                         </div>
                         <div class="project-description">
                             <h3 class="r right">SMART Borrowing System at BASC</h3>
                             <p class="r right">A digital solution for tracking, managing, and organizing faculty equipment with QR code technology.</p>
+                            <div class="code r right">
+                                <span>PHP</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
                             <div class="redirect r right">
                                 <a href="http://localhost/BorrowingSystem/index.php" target="_blank">
                                     <i class="fa-solid fa-up-right-from-square"></i>
@@ -154,9 +170,20 @@
                         </div>
                     </div>
                     <div class="project-row hidden">
+                        <div class="project-img-bg hidden">
+                            <div class="project-img">
+                                <img src="./assets/img/Projects/AIS.png" alt="Project 2">
+                            </div>
+                        </div>
                         <div class="project-description">
                             <h3 class="l left">Academic Information System</h3>
                             <p class="l left">Manage students, professors, and academic records. Check your records and manage your academic information efficiently.</p>
+                            <div class="code l left">
+                                <span>PHP</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
                             <div class="redirect l left">
                                 <a href="http://localhost/student_system/account/login.php" target="_blank">
                                     <i class="fa-solid fa-up-right-from-square"></i>
@@ -164,17 +191,19 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="project-img right">
-                            <img src="./assets/img/Projects/AIS.png" alt="Project 2">
-                        </div>
                     </div>
                     <div class="project-row hidden">
-                        <div class="project-img left">
-                            <img src="./assets/img/Projects/DocumentReq.png" alt="Project 2">
+                        <div class="project-img-bg hidden">
+                            <div class="project-img">
+                                <img src="./assets/img/Projects/DocumentReq.png" alt="Project 2">
+                            </div>
                         </div>
                         <div class="project-description">
                             <h3 class="r right">Document Request System UI Design</h3>
                             <p class="r right">A user-friendly interface prototype for streamlining document requests, designed with Figma to enhance accessibility and efficiency.</p>
+                            <div class="code r right">
+                                <span>Figma</span>
+                            </div>
                             <div class="redirect r right">
                                 <a href="https://www.figma.com/proto/eVolBR1XMflxpCAXsEphAI/Integration-of-Kiosk-and-Queue-System?page-id=0%3A1&node-id=264-927&p=f&t=eBjO3i8JDiof5Lw1-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A3" target="_blank">
                                     <i class="fa-solid fa-up-right-from-square"></i>
@@ -184,18 +213,25 @@
                         </div>
                     </div>
                     <div class="project-row hidden">
+                        <div class="project-img-bg hidden">
+                            <div class="project-img">
+                                <img src="./assets/img/Projects/SMS.png" alt="Project 2">
+                            </div>
+                        </div>
                         <div class="project-description">
                             <h3 class="l left">Student Management System</h3>
                             <p class="l left">A web-based platform for efficient management of student data, enabling CRUD operations to streamline administrative tasks.</p>
+                            <div class="code l left">
+                                <span>PHP</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
                             <div class="redirect l left">
                                 <a href="http://localhost/student_crud/index.php" target="_blank">
                                     <i class="fa-solid fa-up-right-from-square"></i>
                                     <span>Live Demo</span>
                                 </a>
                             </div>
-                        </div>
-                        <div class="project-img right">
-                            <img src="./assets/img/Projects/SMS.png" alt="Project 2">
                         </div>
                     </div>
                 </div>
@@ -244,7 +280,7 @@
                         </div>
                     </div>
                 </div>
-                <span>© 2025 Macren Lacsina Lim. All Rights Reserved.</span>
+                <span>&copy; 2025 Macren Lacsina Lim. All Rights Reserved.</span>
             </div>
         </footer>
     </div>

@@ -6,7 +6,7 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.add('show');
         }
         // else {
-        //     entry.target.classList.remove('show');
+        //    entry.target.classList.remove('show');
         // }
     });
 });
@@ -49,8 +49,27 @@ const sectionObserver = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.2 // Trigger when 10% of the section is visible
+    threshold: 0.2
 });
 
 sectionObserver.observe(heroSection);
 sectionObserver.observe(aboutSection);
+
+//for grid bg
+document.addEventListener('DOMContentLoaded', () => {
+    const gridContainer = document.querySelector('.dynamic-grid');
+    const numOfRows = 25; // Adjust as needed
+    const numOfCols = 20; // Adjust as needed
+
+    // Generate grid
+    for (let i = 0; i < numOfRows; i++) {
+        const row = document.createElement('div');
+        row.className = 'grid-row';
+        for (let j = 0; j < numOfCols; j++) {
+            const cell = document.createElement('div');
+            cell.className = 'grid-cell';
+            row.appendChild(cell);
+        }
+        gridContainer.appendChild(row);
+    }
+});
