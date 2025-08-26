@@ -14,8 +14,16 @@
     <nav class="navbar">
         <div class="navdiv">
             <div class="title"><h1>My Portfolio</h1></div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="menu">
                 <ul class="menu-list">
+                    <div class="menu-close" onclick="toggleMenu()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>

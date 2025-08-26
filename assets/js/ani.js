@@ -35,6 +35,33 @@ toggleButton.addEventListener('click', () => {
     toggleButton.querySelector('span').textContent = modeText;
 });
 
+//for mobile menu toggle
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    const menuToggle = document.querySelector('.menu-toggle');
+    
+    menu.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+    
+    if (menu.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
+}
+
+//for close mobile menu when clicking on a link
+document.querySelectorAll('.menu-list a').forEach(link => {
+    link.addEventListener('click', () => {
+        const menu = document.querySelector('.menu');
+        const menuToggle = document.querySelector('.menu-toggle');
+        
+        menu.classList.remove('active');
+        menuToggle.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+});
+
 //for navbar background color change based on section
 const navbar = document.querySelector('.navbar');
 const heroSection = document.querySelector('#home');

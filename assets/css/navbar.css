@@ -57,7 +57,7 @@ html, body {
 .navbar {
     position: sticky;
     height: auto;
-    padding: 15px 130px;
+    padding: 15px 10%;
     top: 0;
     z-index: 999;
     background-color: var(--menu-bg1);
@@ -67,7 +67,7 @@ html, body {
 .navbar.scrolled {
     background-color: var(--menu-bg2);
     box-shadow: 0 4px 10px var(--img-shadow);
-    padding: 4px 130px;
+    padding: 4px 10%;
     animation: curtain 0.4s ease-in-out forwards;
 }
 
@@ -100,10 +100,13 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .title h1 {
     color: var(--text-color);
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
 }
 
 ul {
@@ -164,10 +167,36 @@ ul {
     color: var(--text-color);
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.menu-close {
+    display: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     background-color: var(--contact-footer);
     height: auto;
+    margin: 50px auto 0;
+    padding: 30px 5% 10px;
 }
 
 .footer-wrap {
@@ -176,7 +205,6 @@ footer {
     justify-content: space-between;
     width: 1000px;
     color: var(--footer-color);
-    margin: 50px auto 0;
     padding: 30px 0 10px;
 }
 
@@ -200,7 +228,7 @@ footer {
 }
 
 .titlecard h2 {
-    font-size: 30px;
+    font-size: clamp(1.8rem, 6vw, 2rem);
     font-weight: 550;
     color: var(--foot-color);
 }
@@ -211,13 +239,14 @@ footer {
     height: 5px;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(90deg, var(--cell-hover), var(--cell-hover1));
+    background: linear-gradient(90deg, var(--background-start), var(--cell-hover1));
 }
 
 .footer-cont {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .sect3 {
@@ -250,7 +279,7 @@ footer {
 
 .contInf i,
 .contInf p {
-    font-size: 18px;
+    font-size: clamp(1rem, 3vw, 1.1rem);
     color: var(--foot-color);
 }
 
@@ -287,8 +316,11 @@ textarea.contact-input {
     padding: 10px 18px;
     border: none;
     border-radius: 6px;
-    background-color: var(--cell-hover);
-    color: var(--foot-color);
+    background: var(--active-color);
+    color: var(--background-start);
+    opacity: 90%;
+    box-shadow: 0 0 10px var(--img-shadow);
+    border: 1px solid var(--img-shadow);
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
@@ -297,8 +329,9 @@ textarea.contact-input {
 }
 
 .contact-button:hover {
-    background-color: var(--cell-hover1);
-    transform: scale(1.02);
+    box-shadow: inset 0 0 10px var(--hover);
+    background-image: linear-gradient(90deg, var(--hover-bg), var(--link-color));
+    border: 1px solid var(--cell-hover);
 }
 
 footer span {
@@ -306,6 +339,6 @@ footer span {
     justify-content: center;
     width: 100%;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
     color: var(--foot-color);
 }
