@@ -239,7 +239,7 @@ footer {
     height: 5px;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(90deg, var(--background-start), var(--cell-hover1));
+    background-color: var(--foot-color);
 }
 
 .footer-cont {
