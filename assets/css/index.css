@@ -324,7 +324,7 @@ main {
 
 .about .span {
     color: var(--text-color);
-    font-size: clamp(0.9rem, 2.5vw, 1.04rem);
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
     margin-bottom: 14px;
 }
 
