@@ -48,13 +48,10 @@
                     <div class="info">
                         <div class="wrap">
                             <div class="title-main">
-                                <h1>Hi! I'm Macren L. Lim</h1>
+                                <h1>I'm Macren L. Lim</h1>
                             </div>
                             <div class="info-me up">
                                 <h1>Front-End Developer | UX/UI Designer</h1>
-                            </div>
-                            <div class="info1 left">
-                                <span>Passionate about web development and design, focused on building creative, responsive, and functional projects.</span>
                             </div>
                             <div class="links">
                                 <div class="link left">
@@ -92,8 +89,8 @@
                                     <h2>ABOUT ME</h2>
                                 </div>
                                 <h2 class="h2 right">Hi! I'm Macren L. Lim</h2>
-                                <span class="span right">A student pursuing a degree in Information Technology with a focus on Front-End Development and UX/UI Design. I enjoy turning ideas into functional projects and have gained experience in web development, graphic design, and digital media.</span>
-                                <span class="span right">My goal is to keep learning and applying my skills to create meaningful and well-structured projects.</span>
+                                <p class="span right">Currently a <b>Information Technology</b> student specializing in <b>Front-End Development and UX/UI Design</b>, passionate about crafting <b>responsive, user-focused</b> digital experiences. Using <b>HTML, CSS, JavaScript, PHP, MySQL, Bootstrap, React, Tailwind CSS, and Figma</b>, I build functional, visually appealing projects that prioritize user satisfaction. With experience in <b>web development, graphic design, and digital media</b>, I create intuitive, high-quality solutions.</p>
+                                <p class="span right">My goal is to continuously grow my expertise and create impactful projects that leave a lasting impression. I’m ready to bring my skills and enthusiasm to innovative teams, ensuring exceptional results every time.</p>
                             </div>
                         </div>
                     </div>
@@ -133,8 +130,26 @@
                                 </div>
                                 <div class="logo hidden">
                                     <div class="logos">
+                                        <img src="./assets/img/sql.png" alt="sql.png">
+                                        <span>MySQL</span>
+                                    </div>
+                                </div>
+                                <div class="logo hidden">
+                                    <div class="logos">
                                         <img src="./assets/img/bootstrap.png" alt="bootstrap.png">
                                         <span>Bootstrap</span>
+                                    </div>
+                                </div>
+                                <div class="logo hidden">
+                                    <div class="logos">
+                                        <img src="./assets/img/react.svg" alt="react.svg">
+                                        <span>React</span>
+                                    </div>
+                                </div>
+                                <div class="logo hidden">
+                                    <div class="logos">
+                                        <img src="./assets/img/tailwind.png" alt="tailwind.png">
+                                        <span>Tailwind CSS</span>
                                     </div>
                                 </div>
                                 <div class="logo hidden">
